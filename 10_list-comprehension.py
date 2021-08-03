@@ -5,5 +5,8 @@ for item in a:
         b.append(item)
 print(b)
 
-b = [i for i in a if i % 2 == 0]
+# shortcut for above code
+b = [i for i in a if i % 2 == 0]  # used in most cases
+c = {i for i in a if i % 2 != 0}  # set comprehension
+print(c)
 print(b)
